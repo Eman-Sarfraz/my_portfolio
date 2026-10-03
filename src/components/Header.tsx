@@ -30,8 +30,8 @@ const Header: React.FC = () => {
               {item}
             </button>
           ))}
-          <a href="/MY_CV.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-teal-400 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-teal-300">
-            View CV <ArrowUpRight size={15} />
+          <a href="https://github.com/Eman-Sarfraz?tab=repositories" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-teal-400 px-4 py-2 text-sm font-semibold text-ink transition hover:bg-teal-300">
+            View work <ArrowUpRight size={15} />
           </a>
         </div>
         <button aria-label="Toggle navigation" onClick={() => setIsMenuOpen(!isMenuOpen)} className={`md:hidden ${isScrolled ? 'text-ink' : 'text-white'}`}>
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
               {item}
             </button>
           ))}
-          <a href="/MY_CV.pdf" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-white">Open CV <ArrowUpRight size={15} /></a>
+          <a href="https://github.com/Eman-Sarfraz?tab=repositories" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-white">View work <ArrowUpRight size={15} /></a>
         </div>
       )}
     </header>

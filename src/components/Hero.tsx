@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">I’m Eman Sarfraz, an M2 Artificial Intelligence student at Université Paris-Saclay. I work across machine learning, deep learning, computer vision, reinforcement learning, and LLM-powered systems.</p>
           <div className="mt-10 flex flex-wrap gap-4">
             <button onClick={scrollToProjects} className="inline-flex items-center gap-2 rounded-full bg-teal-300 px-6 py-3.5 text-sm font-bold text-ink transition hover:-translate-y-1 hover:bg-teal-200">Explore my work <ArrowDown size={17} /></button>
-            <a href="/MY_CV.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-teal-300 hover:text-teal-200">Open my CV <ArrowUpRight size={17} /></a>
+            <a href="https://github.com/Eman-Sarfraz?tab=repositories" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-teal-300 hover:text-teal-200">View my work <ArrowUpRight size={17} /></a>
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-5 text-sm text-slate-400">
             <span className="inline-flex items-center gap-2"><MapPin size={15} className="text-teal-300" /> Paris, France</span>
