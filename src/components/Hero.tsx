@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, BrainCircuit, Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const scrollToProjects = () => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     <section id="home" className="relative overflow-hidden bg-ink">
       <div className="absolute inset-0 opacity-20 [background-image:linear-gradient(rgba(127,231,218,.12)_1px,transparent_1px),linear-gradient(90deg,rgba(127,231,218,.12)_1px,transparent_1px)] [background-size:72px_72px]" />
       <div className="absolute -right-40 top-20 h-[30rem] w-[30rem] rounded-full bg-teal-500/10 blur-3xl" />
-      <div className="relative mx-auto grid min-h-[720px] max-w-6xl items-center gap-16 px-6 pb-20 pt-32 lg:grid-cols-[1.1fr_.9fr]">
+      <div className="relative mx-auto flex min-h-[720px] max-w-6xl items-center px-6 pb-20 pt-32">
         <div>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-teal-300/30 bg-teal-300/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[.18em] text-teal-200">
             <span className="h-2 w-2 rounded-full bg-teal-300 shadow-[0_0_12px_#7fe7da]" /> Open to research, internships & roles
@@ -25,20 +25,6 @@ const Hero: React.FC = () => {
             <a href="mailto:eman.sarfraz@universite-paris-saclay.fr" className="inline-flex items-center gap-2 transition hover:text-teal-200"><Mail size={15} className="text-teal-300" /> Academic email</a>
             <a href="https://www.linkedin.com/in/eman-sarfraz-146a8728a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition hover:text-teal-200"><Linkedin size={17} /></a>
             <a href="https://github.com/Eman-Sarfraz?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition hover:text-teal-200"><Github size={17} /></a>
-          </div>
-        </div>
-        <div className="relative hidden lg:block">
-          <div className="absolute -inset-5 rounded-[2rem] border border-teal-300/20" />
-          <div className="relative rounded-[1.5rem] border border-white/10 bg-white/[.06] p-7 shadow-2xl backdrop-blur-sm">
-            <div className="mb-12 flex items-center justify-between text-xs uppercase tracking-[.18em] text-slate-500"><span>Research focus</span><BrainCircuit size={22} className="text-teal-300" /></div>
-            <div className="space-y-6">
-              {['Continual learning', 'Multimodal AI', 'Offline reinforcement learning', 'Medical computer vision'].map((item, index) => (
-                <div key={item} className="flex items-center gap-4 border-b border-white/10 pb-5 last:border-0 last:pb-0">
-                  <span className="font-display text-2xl text-teal-300">0{index + 1}</span><span className="text-base text-slate-200">{item}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-10 rounded-xl bg-teal-300/10 p-4 text-sm leading-6 text-teal-100">Currently exploring how adaptive, reliable AI systems can move from research ideas to useful products.</div>
           </div>
         </div>
       </div>
