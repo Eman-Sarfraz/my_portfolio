@@ -4,6 +4,26 @@ export default {
   theme: {
     extend: {
       colors: {
+        ink: '#0b1418',
+        cream: '#f7f7f2',
+        teal: {
+          50: '#eefcf9',
+          100: '#d4f7f1',
+          300: '#7fe7da',
+          400: '#52d3c4',
+          700: '#0f766e',
+          900: '#134e4a',
+        },
+        ink: '#0b1418',
+        cream: '#f7f7f2',
+        teal: {
+          50: '#eefcf9',
+          100: '#d4f7f1',
+          300: '#7fe7da',
+          400: '#52d3c4',
+          700: '#0f766e',
+          900: '#134e4a',
+        },
         beige: {
           50: '#f9f6f2',
           100: '#f4efea',

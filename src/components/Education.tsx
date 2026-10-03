@@ -1,124 +1,17 @@
 import React from 'react';
-import { GraduationCap, Award, Calendar } from 'lucide-react';
+import { Award, BookOpen, GraduationCap } from 'lucide-react';
 
-const Education: React.FC = () => {
-  const certifications = [
-    "Machine Learning - Stanford University",
-    "Introduction to Computer Vision and Image Processing - IBM",
-    "Machine Learning Operations (MLOps) - Google Cloud Training",
-    "AI in Project Management",
-    "Fundamentals of LLMs - Hugging Face",
-    "AI for Medical Diagnosis by Deep Learning.AI",
-    "Problem Solving - HackerRank",
-    "Basic Generative Adversarial Networks - DeepLearning.AI"
-  ];
-
-  return (
-    <section id="education" className="py-20 bg-gradient-to-br from-beige-50 to-white">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold font-playfair italic text-gray-800 mb-6">
-              Education & Certifications
-            </h2>
-            <p className="text-xl text-gray-600">
-              Academic foundation and professional certifications in AI and machine learning.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Education */}
-            <div className="animate-fade-in-up">
-              <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-3 bg-cyan-100 rounded-full">
-                    <GraduationCap size={24} className="text-cyan-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800">Academic Background</h3>
-                </div>
-
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-800 mb-2">
-                      BS Artificial Intelligence
-                    </h4>
-                    <p className="text-gray-600 mb-2">
-                      University of Central Punjab
-                    </p>
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                      <div className="flex items-center gap-1">
-                        <Calendar size={16} />
-                        <span>Graduation: June 2026</span>
-                      </div>
-                    </div>
-                    <div className="inline-block bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full">
-                      CGPA: 3.8/4.0
-                    </div>
-                  </div>
-
-                  <div className="pt-6 border-t border-gray-200">
-                    <h5 className="font-semibold text-gray-700 mb-3">Core Subjects</h5>
-                    <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
-                      <span>• Machine Learning</span>
-                      <span>• Deep Learning</span>
-                      <span>• Computer Vision</span>
-                      <span>• Natural Language Processing</span>
-                      <span>• Data Structures</span>
-                      <span>• Algorithm Analysis</span>
-                      <span>• Statistics & Probability</span>
-                      <span>• Linear Algebra</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Certifications */}
-            <div className="animate-fade-in-up animation-delay-200">
-              <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-3 bg-cyan-100 rounded-full">
-                    <Award size={24} className="text-cyan-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800">Professional Certifications</h3>
-                </div>
-
-                <div className="grid grid-cols-1 gap-3">
-                  {certifications.map((cert, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-cyan-50 transition-colors duration-200"
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                      <span className="text-gray-700 font-medium">{cert}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-6 pt-6 border-t border-gray-200">
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>For more certifications, visit my LinkedIn profile</span>
-                  </div>
-                  <div className="flex flex-wrap gap-3 mt-2">
-                    {['Stanford University', 'DeepLearning.AI', 'Google Cloud', 'IBM', 'Hugging Face', 'HackerRank'].map((platform) => (
-                      <span
-                        key={platform}
-                        className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
-                      >
-                        {platform}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+const Education: React.FC = () => (
+  <section id="education" className="bg-cream py-28 text-ink">
+    <div className="mx-auto max-w-6xl px-6">
+      <div className="mb-14"><p className="section-kicker">Foundation</p><h2 className="section-title">Curious by training.<br /><span className="text-teal-700">Research-led by choice.</span></h2></div>
+      <div className="grid gap-5 lg:grid-cols-[1.1fr_.9fr]">
+        <div className="rounded-2xl bg-ink p-8 text-white md:p-10"><GraduationCap size={28} className="text-teal-300" /><p className="mt-12 text-xs font-bold uppercase tracking-[.18em] text-teal-300">Sep 2025 — Present · Paris, France</p><h3 className="mt-3 font-display text-3xl">M2 Artificial Intelligence</h3><p className="mt-2 text-slate-300">Université Paris-Saclay</p><div className="mt-10 grid gap-4 border-t border-white/10 pt-6 sm:grid-cols-2"><div><p className="text-sm text-slate-400">Research interests</p><p className="mt-2 text-sm leading-6 text-slate-200">Continual learning, multimodal systems, reliable AI, and reinforcement learning.</p></div><div><p className="text-sm text-slate-400">Languages</p><p className="mt-2 text-sm leading-6 text-slate-200">English (C1) · Urdu (native) · French (A1)</p></div></div></div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-8 md:p-10"><Award size={28} className="text-teal-700" /><p className="mt-12 text-xs font-bold uppercase tracking-[.18em] text-teal-700">Nov 2022 — Jul 2026 · Lahore, Pakistan</p><h3 className="mt-3 font-display text-3xl">BS Artificial Intelligence</h3><p className="mt-2 text-slate-600">University of Central Punjab</p><div className="mt-8 inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-sm font-bold text-teal-800"><Award size={15} /> Gold Medal · Merit Scholarship</div><p className="mt-6 text-sm leading-7 text-slate-600">Graduated with a 3.85 / 4.00 CGPA, building a foundation across machine learning, deep learning, computer vision, NLP, and statistical methods.</p></div>
       </div>
-    </section>
-  );
-};
+      <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-8 md:p-10"><div className="flex items-center gap-3"><BookOpen size={22} className="text-teal-700" /><h3 className="font-display text-2xl">Technical toolkit</h3></div><div className="mt-7 flex flex-wrap gap-2">{['Python', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy', 'Computer Vision', 'LLMs', 'Generative AI', 'Flask', 'Next.js', 'Docker', 'Git / GitHub', 'SQL', 'C++', 'LaTeX'].map((skill) => <span key={skill} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700">{skill}</span>)}</div></div>
+    </div>
+  </section>
+);
 
 export default Education;

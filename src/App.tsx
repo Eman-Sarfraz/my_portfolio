@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-ink text-slate-100">
       <Header />
       <main>
         <Hero />
@@ -17,15 +17,10 @@ function App() {
         <Education />
         <Contact />
       </main>
-      
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <p className="text-gray-400">
-              © 2025 Eman Sarfraz. Crafted with passion for AI and innovation.
-            </p>
-          </div>
+      <footer className="border-t border-white/10 bg-ink py-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+          <p>© 2026 Eman Sarfraz. Building practical intelligence.</p>
+          <p>Paris, France · Lahore, Pakistan</p>
         </div>
       </footer>
     </div>
